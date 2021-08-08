@@ -37,7 +37,7 @@
     "validator": "^13.6.0"
   },
   "engines": {
-    "node": "7.20.3"
+    "node": "14.17.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
