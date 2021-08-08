@@ -1,0 +1,32 @@
+doctype html 
+html 
+    head 
+        block head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel="shortcut icon" href="/images/samir.jpg")
+        link(rel='stylesheet' href='/css/style.css')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        link(href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css', rel='stylesheet')
+        script(src='https://unpkg.com/scrollreveal')
+        title Login Page
+    body
+
+        //Content
+        block content
+            section.menu-body
+                .login-form
+                    h2 Hesaba daxil ol
+                    form.form.form--login
+                        .form-group
+                            label.form__label(for='email') Email
+                            input#email.form__input(type='email', placeholder='you@example.com', , required)
+                        .form-group
+                            label.form__label(for='password') Şifrə
+                            input#password.form__input(type='password', placeholder='••••••••', required, minlength='8')
+                        .form-group.text-center
+                            button.btn.btn-success.login__btn Daxil ol
+        
+        script(src='/js/bundle.js')
+        
+    

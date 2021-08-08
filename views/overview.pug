@@ -1,0 +1,169 @@
+extends base-overview 
+
+block content 
+
+  main.main-1
+    section.home.bd-grid#home
+      .home__data
+        h1.home__title
+          | Hi,
+          br
+          | I'm 
+          span.home__title-color Samir
+        h1
+          span.typing#type
+          span.typed-cursor |
+        br
+        a.button(href='#contact') Contact
+        a.button-cv(href='/images/Samir-Guluzadeh.pdf' style="margin-left:2%") Download CV
+      .home__social
+        a.home__social-icon(href='https://www.linkedin.com/in/samir-guluzadeh-3892811b5/')
+          i.bx.bxl-linkedin
+        a.home__social-icon(href='https://github.com/samirquluzade')
+          i.bx.bxl-github
+        a.home__social-icon(href='https://www.facebook.com/samirquluzadeh2001')
+          i.bx.bxl-facebook-circle
+        a.home__social-icon(href='https://www.instagram.com/samir_guluzadeh/')
+          i.bx.bxl-instagram
+        a.home__social-icon(href='https://api.whatsapp.com/send?phone=0558735810&text=Salam')
+          i.bx.bxl-whatsapp
+        a.home__social-icon(href='https://t.me/samirquluzadeh')
+          i.bx.bxl-telegram
+      .home__img
+        img(src='/images/samir.jpg', alt)
+    section.about.section#about
+      h2.section-title About
+      .about__container.bd-grid
+        div
+          p.about__text
+            | Hi,I'm Samir.I am creating websites as a web developer and I like it.
+            br
+          h2.about__text Bachelor degree 
+            br
+          p.about__text I graduated in Computer Engineering at Baku Engineering University.
+          br
+          h2.about__text Master degree
+          p.about__text I am studying in Economic Information Systems at the Azerbaijan State University of Economics right now.
+
+          p
+    section.skills.section#skills
+      h2.section-title Skills
+      .skills__container.bd-grid
+        div
+          h2.skills__subtitle Professional Skills
+          .skills__data
+            .skills__names
+              i.bx.bxl-html5
+              span.skills__name HTML
+          .skills__data
+            .skills__names
+              i.bx.bxs-bone
+              span.skills__name PUG
+          .skills__data
+            .skills__names
+              i.bx.bxl-css3
+              span.skills__name CSS
+          .skills__data
+            .skills__names
+              i.bx.bxl-bootstrap
+              span.skills__name BOOTSTRAP
+          .skills__data
+            .skills__names
+              i.bx.bxl-sass
+              span.skills__name SASS
+          .skills__data
+            .skills__names
+              i.bx.bxl-javascript
+              span.skills__name JAVASCRIPT
+          .skills__data
+            .skills__names
+              i.bx.bxl-nodejs
+              span.skills__name NODE.JS
+          .skills__data
+            .skills__names
+              i.bx.bxl-nodejs
+              span.skills__name EXPRESS.JS
+          .skills__data
+            .skills__names
+              i.bx.bxl-react
+              span.skills__name REACT.JS
+          .skills__data
+            .skills__names
+              i.bx.bx-code-alt
+              span.skills__name   C/C++/C#/Java algorithmic knowledge
+          .skills__data
+            .skills__names
+              i.bx.bxs-data
+              span.skills__name  MONGODB
+          .skills__data
+            .skills__names
+              i.bx.bxs-data
+              span.skills__name  MSSQL
+          h2.skills__subtitle Additional Skills
+          .skills__data
+            .skills__names
+              i.bx.bx-code-alt
+              span.skills__name C#
+          .skills__data
+            .skills__names
+              i.bx.bx-code-alt
+              span.skills__name ASP.NET MVC
+          .skills__data
+            .skills__names
+              i.bx.bxs-data
+              span.skills__name  ORACLE SQL
+          .skills__data
+            .skills__names
+              i.bx.bxl-adobe
+              span.skills__name Adobe Premiere
+          .skills__data
+            .skills__names
+              i.bx.bxl-adobe
+              span.skills__name Adobe Photoshop
+          .skills__data
+            .skills__names
+              i.bx.bxl-microsoft
+              span.skills__name  MS OFFICE
+    section.work.section#portfolio
+      h2.section-title Portfolio
+      .work-container.bd-grid
+        .work__img
+          .row
+            .col-md-4
+              .item
+                a.d-flex.justify-content-center(href='https://samirquluzade.github.io/Quiz-App/' title="Quiz App")
+                  i.bx.bx-search
+                  img(src='/images/screencapture-samirquluzade-github-io-Quiz-App-2021-08-02-22_53_07.png')
+            .col-md-4
+              .item
+                a.d-flex.justify-content-center(href='https://samirquluzade.github.io/Weather-App/' title="Weather App")
+                  i.bx.bx-search
+                  img(src='/images/screencapture-samirquluzade-github-io-Weather-App-2021-08-03-21_16_31.png')
+            .col-md-4
+              .item
+                a.d-flex.justify-content-center(href='https://samirquluzade.github.io/Movie-App/' title="Movie App")
+                  i.bx.bx-search
+                  img(src='/images/screencapture-samirquluzade-github-io-Movie-App-2021-08-03-21_53_14.png')
+            .col-md-4
+              .item
+                a.d-flex.justify-content-center(href='https://restaurantappdemo1.herokuapp.com/' title="Restaurant App")
+                  i.bx.bx-search
+                  img(src='/images/screencapture-restaurantappdemo1-herokuapp-2021-08-03-21_58_27.png')
+            .col-md-4
+              .item
+                a.d-flex.justify-content-center(href='https://budgetappdemo.netlify.app/' title="Budget App")
+                  i.bx.bx-search
+                  img(src='/images/screencapture-budgetappdemo-netlify-app-2021-08-08-10_09_55.png')
+            .col-md-4
+              .item
+                a.d-flex.justify-content-center(href='#')
+                  i.bx.bx-search
+                  img(src='/images/laptop-home-office.jpg')
+    section.contact.section#contact
+      h2.section-title Contact
+      .contact__container.bd-grid
+        form.contact__form
+          input.contact__input(type='text', placeholder='Name' id="name",required)
+          input.contact__input(type='email', placeholder='Email' id="email",required)
+          textarea.contact__input(name, cols='0', rows='10', placeholder='Message' id="message",required)
+          button.btn.btn-primary.send__btn Send <i class='bx bxl-telegram'></i>

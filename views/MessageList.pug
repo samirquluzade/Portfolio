@@ -1,0 +1,40 @@
+doctype html 
+html 
+    head 
+        block head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel="shortcut icon" href="/images/samir.jpg")
+        link(rel='stylesheet' href='/css/style.css')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        link(href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css', rel='stylesheet')
+        script(src='https://unpkg.com/scrollreveal')
+        title Message List
+    body
+
+        //Content
+        block content
+        -let i = 1
+            .manage-messages
+                .message-view__form-container
+                    table.table.table-borderless.table-dark
+                        thead
+                            tr
+                                th(scope='col') #
+                                th(scope='col') Ad
+                                th(scope='col') Email
+                                th(scope='col') Mesaj
+                                th(scope='col') Sil
+                        tbody
+                            each message in messages
+                                    tr
+                                        td=`${i++}`
+                                        td=`${message.name}`
+                                        td=`${message.email}`
+                                        td=`${message.message}`
+                                        td 
+                                            input.message-delete.btn.btn--small.btn-danger(type="button",id=`${message._id}`,value="Sil")
+        
+        script(src='/js/bundle.js')
+        
+    
